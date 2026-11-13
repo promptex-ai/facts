@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0](https://github.com/promptex-ai/facts/compare/devtool-facts/v0.4.0...devtool-facts/v0.5.0) (2026-11-13)
+
+
+### Added
+
+* **service-facts:** 補 GitHub App installation token 的 github fact，devtool-facts 新增 octokit-auth-app component ([#80](https://github.com/promptex-ai/facts/issues/80)) ([59537a7](https://github.com/promptex-ai/facts/commit/59537a71d6b75e081f3bc67d81f44cab6031f635))
+
+
+### Fixed
+
+* **devtool-facts:** release-please 起始版號補 python 與 rust 不讀 initial-version 的例外 ([#82](https://github.com/promptex-ai/facts/issues/82)) ([bb33858](https://github.com/promptex-ai/facts/commit/bb338585ea59153ccea856180ff2b36f7c63326b))
+* 倉庫位置改到 promptex-ai，著作權人改成 Promptex-AI ([#88](https://github.com/promptex-ai/facts/issues/88)) ([bab0960](https://github.com/promptex-ai/facts/commit/bab096026ff0fa95cb276c659dcb233e5be510d8))
+
 ## [0.4.0](https://github.com/carlos-space/facts/compare/devtool-facts/v0.3.0...devtool-facts/v0.4.0) (2026-10-29)
 
 
