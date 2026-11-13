@@ -14,7 +14,7 @@ facts 是產品定義與規格的單一來源，記錄每個版本是什麼、�
 | `distribution-facts` | 發行與上架管道的 facts（app-store、apple-notarization、crates-io、google-play、npm、pypi、sparkle）              | npm（公開） |
 | `service-facts`      | 雲端服務的 facts（cloudflare-r2、github、github-actions）                                                        | npm（公開） |
 
-本倉庫發布這 5 個匯總套件。每個匯總套件把所屬 component 的 facts 放在子路徑 `<匯總套件>/<component>`，例如 `readFacts('ai-agent-facts/claude-code')`。component 套件放在 `packages/<匯總套件>/<component>/`，名稱是 `<component>-facts`，是 `private: true` 的工作區套件，不發布，只用來撰寫與建置。撰寫、檢查、建置、讀取與比對 facts 的工具由 npm 的 `fact-kit` 套件提供（原始碼在倉庫 carlos-space/fact-kit），各套件以它建置。fact-kit 自己的 facts 由 npm 的 `fact-kit-facts` 提供。
+本倉庫發布這 5 個匯總套件。每個匯總套件把所屬 component 的 facts 放在子路徑 `<匯總套件>/<component>`，例如 `readFacts('ai-agent-facts/claude-code')`。component 套件放在 `packages/<匯總套件>/<component>/`，名稱是 `<component>-facts`，是 `private: true` 的工作區套件，不發布，只用來撰寫與建置。撰寫、檢查、建置、讀取與比對 facts 的工具由 npm 的 `fact-kit` 套件提供（原始碼在倉庫 promptex-ai/fact-kit），各套件以它建置。fact-kit 自己的 facts 由 npm 的 `fact-kit-facts` 提供。
 
 拆分前的 `platform-facts` 已不在本倉庫。下面兩張表說明每個 component 在哪個匯總套件，以及有哪些 fact 的 id 改了名。
 
