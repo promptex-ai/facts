@@ -100,6 +100,27 @@
 - 破壞性變更：無。只新增 github 的 6 筆 fact，但 0.x 的 `feat` 升 minor，依賴 `^0.3.0` 的消費者要改依賴範圍才拿得到 0.4.0
 - 退法：同下方 Rollback，修補從 `v0.1.5` 重建
 
+## v0.1.6（維護型）
+
+- 產品版號：`v0.1.6`，從 `v0.1.5` 重建 `release/v0.1`，以 `cut-release.sh --line 0.1 --units ai-agent-facts,os-facts,devtool-facts,distribution-facts,service-facts --from v0.1.5 --stage ga` 開線，修正用 `git cherry-pick -x` 帶入
+- 入版單元：5 個單元都入版，從 GA 起步，發到 npm 的 `latest`。倉庫已轉到 promptex-ai，這是從新倉庫發的第一版，npm 的 Trusted Publisher 在合併 Release PR 前改綁 promptex-ai/facts
+
+| PR  | 單元                         | 單元版號 | 內容                                                                      |
+| :-- | :--------------------------- | :------- | :------------------------------------------------------------------------ |
+| #80 | service-facts、devtool-facts | 0.5.0    | 補 GitHub App installation token 的 fact，新增 octokit-auth-app component |
+| #81 | os-facts                     | 0.2.0    | 新增 launchd 的停止逾時 fact                                              |
+| #82 | devtool-facts                | 0.5.0    | release-please 起始版號補 python 與 rust 的例外                           |
+| #83 | service-facts                | 0.5.0    | 補 gh pr checks 的結束碼與沒有檢查時的輸出                                |
+| #84 | service-facts                | 0.5.0    | App 讀 PR 檢查狀態需要 Checks 與 Commit statuses 唯讀                     |
+| #85 | service-facts                | 0.5.0    | GitHub App 讀檢查狀態的錯誤訊息改為逐字原文                               |
+| #86 | service-facts                | 0.5.0    | 補 Actions job 與 run 狀態值與排隊量測                                    |
+| #87 | service-facts                | 0.5.0    | 補 pnpm/action-setup v6.1.0 的 commit 與 bootstrap 版本                   |
+| #88 | 5 個單元                     | 見下     | 倉庫位置改到 promptex-ai，著作權人改成 Promptex-AI                        |
+
+- 單元版號：ai-agent-facts 0.1.2、os-facts 0.2.0、devtool-facts 0.5.0、distribution-facts 0.1.1、service-facts 0.5.0。ai-agent-facts 與 distribution-facts 只有 #88 的 fix
+- 破壞性變更：無。os-facts、devtool-facts、service-facts 只新增 fact，但 0.x 的 `feat` 升 minor，依賴 `^0.1.0` 或 `^0.4.0` 的消費者要改依賴範圍才拿得到新版
+- 退法：同下方 Rollback，修補從 `v0.1.6` 重建
+
 ## Rollback
 
 - 可回退：npm 上已發布的版本原則上不撤回。有問題的版本用 `npm deprecate` 標記，修正走修補發布。
@@ -113,3 +134,4 @@
 - 0.1.3：維護型，devtool-facts 0.4.0
 - 0.1.4：維護型，service-facts 0.3.0
 - 0.1.5：維護型，service-facts 0.4.0
+- 0.1.6：維護型，ai-agent-facts 0.1.2、os-facts 0.2.0、devtool-facts 0.5.0、distribution-facts 0.1.1、service-facts 0.5.0
