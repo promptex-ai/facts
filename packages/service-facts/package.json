@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carlos-space/facts",
+    "url": "https://github.com/promptex-ai/facts",
     "directory": "packages/service-facts"
   },
   "publishConfig": {
