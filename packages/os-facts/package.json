@@ -1,6 +1,6 @@
 {
   "name": "os-facts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unofficial machine-readable facts about operating systems and their service managers: launchd. Not affiliated with Apple or any operating system vendor.",
   "license": "MIT",
   "type": "module",
