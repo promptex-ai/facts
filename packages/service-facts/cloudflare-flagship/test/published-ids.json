@@ -1,0 +1,23 @@
+{
+  "baseline": "unreleased",
+  "removed": [],
+  "ids": {
+    "cloudflare-flagship": [
+      "cloudflare-flagship.app-id-must-exist-at-deploy",
+      "cloudflare-flagship.apps-delete-silent-failure",
+      "cloudflare-flagship.binding-config",
+      "cloudflare-flagship.changelog-updated-by-unknown",
+      "cloudflare-flagship.delete-order",
+      "cloudflare-flagship.disabled-flag-value",
+      "cloudflare-flagship.http-evaluate-endpoint",
+      "cloudflare-flagship.local-testing",
+      "cloudflare-flagship.missing-flag-value",
+      "cloudflare-flagship.nodejs-compat-required",
+      "cloudflare-flagship.propagation-delay",
+      "cloudflare-flagship.reason-values",
+      "cloudflare-flagship.tofu-ignore-changes",
+      "cloudflare-flagship.tofu-import-id",
+      "cloudflare-flagship.tofu-resources"
+    ]
+  }
+}

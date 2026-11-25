@@ -1,6 +1,6 @@
 # service-facts
 
-Machine-readable facts about services: Cloudflare R2, GitHub and GitHub Actions. Each fact records where it came from and, for observed facts, how to check it again.
+Machine-readable facts about services: Cloudflare Flagship, Cloudflare R2, GitHub and GitHub Actions. Each fact records where it came from and, for observed facts, how to check it again.
 
 This package is unofficial. It is not affiliated with, endorsed by, or sponsored by Cloudflare or GitHub. Product names are trademarks of their respective owners.
 
@@ -8,11 +8,12 @@ This package is unofficial. It is not affiliated with, endorsed by, or sponsored
 
 Every entry is a built `index.json` under a sub-path.
 
-| Subpath                                   | Describes      |
-| :---------------------------------------- | :------------- |
-| `service-facts/cloudflare-r2/index.json`  | Cloudflare R2  |
-| `service-facts/github/index.json`         | GitHub         |
-| `service-facts/github-actions/index.json` | GitHub Actions |
+| Subpath                                        | Describes           |
+| :--------------------------------------------- | :------------------ |
+| `service-facts/cloudflare-flagship/index.json` | Cloudflare Flagship |
+| `service-facts/cloudflare-r2/index.json`       | Cloudflare R2       |
+| `service-facts/github/index.json`              | GitHub              |
+| `service-facts/github-actions/index.json`      | GitHub Actions      |
 
 ## Usage
 

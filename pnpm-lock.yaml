@@ -433,6 +433,9 @@ importers:
 
   packages/service-facts:
     devDependencies:
+      cloudflare-flagship-facts:
+        specifier: workspace:*
+        version: link:cloudflare-flagship
       cloudflare-r2-facts:
         specifier: workspace:*
         version: link:cloudflare-r2
@@ -445,6 +448,15 @@ importers:
       github-facts:
         specifier: workspace:*
         version: link:github
+
+  packages/service-facts/cloudflare-flagship:
+    devDependencies:
+      fact-kit:
+        specifier: ^0.10.0
+        version: 0.10.0(oxc-parser@0.155.0)(prettier@3.9.10)(typescript@7.0.2)
+      oxc-parser:
+        specifier: ^0.155.0
+        version: 0.155.0
 
   packages/service-facts/cloudflare-r2:
     devDependencies:
