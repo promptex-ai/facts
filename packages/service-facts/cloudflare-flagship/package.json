@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-flagship-facts",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Facts about Cloudflare Flagship. Private workspace package, published through service-facts.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "fact-kit build",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "fact-kit": "^0.10.0",
+    "oxc-parser": "^0.155.0"
+  },
+  "exports": {
+    "./cloudflare-flagship/index.json": "./dist/cloudflare-flagship/index.json"
+  }
+}

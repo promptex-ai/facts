@@ -1,7 +1,7 @@
 {
   "name": "service-facts",
   "version": "0.5.0",
-  "description": "Unofficial machine-readable facts about services: Cloudflare R2, GitHub and GitHub Actions. Not affiliated with Cloudflare or GitHub.",
+  "description": "Unofficial machine-readable facts about services: Cloudflare Flagship, Cloudflare R2, GitHub and GitHub Actions. Not affiliated with Cloudflare or GitHub.",
   "license": "MIT",
   "type": "module",
   "repository": {
@@ -24,12 +24,15 @@
     "build": "fact-kit build"
   },
   "devDependencies": {
+    "cloudflare-flagship-facts": "workspace:*",
     "cloudflare-r2-facts": "workspace:*",
     "fact-kit": "^0.10.0",
     "github-actions-facts": "workspace:*",
     "github-facts": "workspace:*"
   },
   "exports": {
+    "./cloudflare-flagship/index.json": "./dist/cloudflare-flagship/index.json",
+    "./cloudflare-flagship/schemas/*": "./dist/cloudflare-flagship/schemas/*",
     "./cloudflare-r2/index.json": "./dist/cloudflare-r2/index.json",
     "./cloudflare-r2/schemas/*": "./dist/cloudflare-r2/schemas/*",
     "./github/index.json": "./dist/github/index.json",
